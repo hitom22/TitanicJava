@@ -18,6 +18,7 @@ public class Run {
 //		exArr.exercise1();
 //		exArr.exercise2();
 //		exArr.arryCopyExercise();
+		exArr.lottoExercise();
 		
 		Exercise_For exFor = new Exercise_For();
 //		exFor.forExercise2();
