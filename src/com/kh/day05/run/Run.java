@@ -2,9 +2,9 @@ package com.kh.day05.run;
 
 import java.util.Scanner;
 
-import come.kh.day05.oop.Book;
-import come.kh.day05.oop.Circle;
-import come.kh.day05.oop.exercise.Rectangle;
+import com.kh.day05.oop.Book;
+import com.kh.day05.oop.Circle;
+import com.kh.day05.oop.exercise.Rectangle;
 
 public class Run {
 	public static void main(String [] args) 
