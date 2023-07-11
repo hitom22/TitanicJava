@@ -13,12 +13,15 @@ public class Exam_Calendar {
 		openDate.set(2023, 4, 15, 9, 0);
 		// 종강일
 		closeDate.clear();
-		closeDate.set(2023, 9, 26, 17, 50);
+		closeDate.set(2023, 9, 26, 5, 50);
 		closeDate.set(Calendar.HOUR_OF_DAY, 17);
 		
 		ex.printCalendar("현재", today);
 		ex.printCalendar("개강일", openDate);
 		ex.printCalendar("종강일", closeDate);
+		
+        // error : Cannot make a static reference 
+//					to the non-static method printCalendar(String, Calendar) from the type Exam_Calendar
 //		openDate.set(Calendar.HOUR_OF_DAY, 9);
 //		openDate.set(Calendar.MINUTE, 0);
 	}
@@ -41,18 +44,18 @@ public class Exam_Calendar {
 		
 		System.out.print("/");
 		switch(dayOfWeek) {
-		case Calendar.SUNDAY: System.out.print("일요일"); break;
-		case 2: System.out.print("월요일"); break;
-		case 3: System.out.print("화요일"); break;
-		case 4: System.out.print("수요일"); break;
-		case 5: System.out.print("목요일"); break;
-		case 6: System.out.print("금요일"); break;
-		case 7: System.out.print("토요일"); break;
-		}
+			case Calendar.SUNDAY: System.out.print("일요일"); break;
+			case 2: System.out.print("월요일"); break;
+			case 3: System.out.print("화요일"); break;
+			case 4: System.out.print("수요일"); break;
+			case 5: System.out.print("목요일"); break;
+			case 6: System.out.print("금요일"); break;
+			case 7: System.out.print("토요일"); break;
+			}
 
 		System.out.print("(" + hourOfDay + "시) ");
 		if(ampm == Calendar.AM) System.out.print("오전 ");
-		else System.out.println("오후 ");
+		else System.out.print("오후 ");
 		System.out.print(hour + "시 " + minute + "분 " + second + "초 " 
 			+ millisecond + "밀리초");
 		System.out.println();
